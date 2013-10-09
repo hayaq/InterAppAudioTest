@@ -74,11 +74,11 @@ OSStatus renderCallback(void *inRefCon,
 	fmt.mSampleRate = [[AVAudioSession sharedInstance] sampleRate];
 	fmt.mFormatID = kAudioFormatLinearPCM;
 	fmt.mFormatFlags = kAudioFormatFlagIsPacked|kAudioFormatFlagIsSignedInteger;
-    fmt.mBytesPerPacket = 2;
-    fmt.mFramesPerPacket = 1;
-    fmt.mBytesPerFrame = 2;
-    fmt.mChannelsPerFrame = 1;
-    fmt.mBitsPerChannel = 2 * 8;
+	fmt.mBytesPerPacket = 2;
+	fmt.mFramesPerPacket = 1;
+	fmt.mBytesPerFrame = 2;
+	fmt.mChannelsPerFrame = 1;
+	fmt.mBitsPerChannel = 2 * 8;
 	return fmt;
 }
 
@@ -140,9 +140,9 @@ OSStatus renderCallback(void *inRefCon,
 						 0,&fmt,sizeof(fmt));
 	
 	AURenderCallbackStruct callback;
-    callback.inputProc = renderCallback;
-    callback.inputProcRefCon = &_outputWave;
-    AudioUnitSetProperty(_remoteIOUnit,
+	callback.inputProc = renderCallback;
+	callback.inputProcRefCon = &_outputWave;
+	AudioUnitSetProperty(_remoteIOUnit,
 						 kAudioUnitProperty_SetRenderCallback,
 						 kAudioUnitScope_Global,
 						 0,&callback,sizeof(callback));

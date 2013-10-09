@@ -13,7 +13,7 @@ static AudioComponentDescription ACDescMake(OSType,OSType,OSType);
 -(id)init{
 	self = [super init];
 	AVAudioSession *session = [AVAudioSession sharedInstance];
-    [session setCategory:AVAudioSessionCategoryPlayback
+	[session setCategory:AVAudioSessionCategoryPlayback
 			 withOptions:AVAudioSessionCategoryOptionMixWithOthers error:Nil];
 	[session setActive:YES error:nil];
 	[self setupRemoteAudioUnit];
@@ -22,7 +22,7 @@ static AudioComponentDescription ACDescMake(OSType,OSType,OSType);
 
 - (void)dealloc
 {
-    if( _graph ){
+	if( _graph ){
 		AUGraphUninitialize(_graph);
 		AUGraphClose(_graph);
 	}
@@ -72,7 +72,7 @@ static AudioComponentDescription ACDescMake(OSType,OSType,OSType);
 	AudioComponentDescription mixDesc = ACDescMake(kAudioUnitType_Mixer,
 												kAudioUnitSubType_MultiChannelMixer,
 												kAudioUnitManufacturer_Apple);
-    
+	
 	AUNode outNode = 0;
 	AUNode mixNode = 0;
 	AUNode inNode = 0;
@@ -83,7 +83,7 @@ static AudioComponentDescription ACDescMake(OSType,OSType,OSType);
 	result = AUGraphAddNode(_graph, &mixDesc, &mixNode);
 	AU_CHECK();
 	
-    result = AUGraphConnectNodeInput(_graph, mixNode, 0, outNode, 0);
+	result = AUGraphConnectNodeInput(_graph, mixNode, 0, outNode, 0);
 	AU_CHECK();
 	
 	AudioComponentDescription inDesc;
@@ -120,7 +120,7 @@ static AudioComponentDescription ACDescMake(OSType,OSType,OSType);
 	AU_CHECK();
 	
 	result = AUGraphInitialize(_graph);
-    AU_CHECK();
+	AU_CHECK();
 }
 
 @end
