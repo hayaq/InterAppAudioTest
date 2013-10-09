@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A141C6D1803E3AE00BDE216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A141C6C1803E3AE00BDE216 /* Foundation.framework */; };
+		4A141C6F1803E3AE00BDE216 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A141C6E1803E3AE00BDE216 /* CoreGraphics.framework */; };
+		4A141C711803E3AE00BDE216 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A141C701803E3AE00BDE216 /* UIKit.framework */; };
+		4A141C771803E3AE00BDE216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A141C751803E3AE00BDE216 /* InfoPlist.strings */; };
+		4A141C791803E3AE00BDE216 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A141C781803E3AE00BDE216 /* main.m */; };
+		4A141C7D1803E3AE00BDE216 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A141C7C1803E3AE00BDE216 /* AppDelegate.m */; };
+		4A141C801803E3AE00BDE216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A141C7E1803E3AE00BDE216 /* Main.storyboard */; };
+		4A141C831803E3AE00BDE216 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A141C821803E3AE00BDE216 /* ViewController.m */; };
+		4A141C851803E3AE00BDE216 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A141C841803E3AE00BDE216 /* Images.xcassets */; };
+		4A141CA31803E91200BDE216 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A141CA21803E91200BDE216 /* AudioToolbox.framework */; };
+		4A141CAC1804087300BDE216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A141C6C1803E3AE00BDE216 /* Foundation.framework */; };
+		4A141CAD1804087300BDE216 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A141C6E1803E3AE00BDE216 /* CoreGraphics.framework */; };
+		4A141CAE1804087300BDE216 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A141C701803E3AE00BDE216 /* UIKit.framework */; };
+		4A141CB41804087300BDE216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A141CB21804087300BDE216 /* InfoPlist.strings */; };
+		4A141CB61804087300BDE216 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A141CB51804087300BDE216 /* main.m */; };
+		4A141CBA1804087300BDE216 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A141CB91804087300BDE216 /* AppDelegate.m */; };
+		4A141CBD1804087300BDE216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A141CBB1804087300BDE216 /* Main.storyboard */; };
+		4A141CC01804087300BDE216 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A141CBF1804087300BDE216 /* ViewController.m */; };
+		4A141CC21804087300BDE216 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A141CC11804087300BDE216 /* Images.xcassets */; };
+		4A141CE118040D0600BDE216 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A141CA21803E91200BDE216 /* AudioToolbox.framework */; };
+		4A141CE318040D8100BDE216 /* IAAHost.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 4A141CE218040D8100BDE216 /* IAAHost.entitlements */; };
+		4A141CE81804482D00BDE216 /* IAAudioGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A141CE61804482D00BDE216 /* IAAudioGenerator.m */; };
+		4A141CE91804482D00BDE216 /* IAAudioGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A141CE61804482D00BDE216 /* IAAudioGenerator.m */; };
+		4A72A88F18053AD0004DE44C /* MyAUGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A72A88E18053AD0004DE44C /* MyAUGraph.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A141C691803E3AE00BDE216 /* IAAGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IAAGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A141C6C1803E3AE00BDE216 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4A141C6E1803E3AE00BDE216 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4A141C701803E3AE00BDE216 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4A141C741803E3AE00BDE216 /* IAAGenerator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IAAGenerator-Info.plist"; sourceTree = "<group>"; };
+		4A141C761803E3AE00BDE216 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4A141C781803E3AE00BDE216 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4A141C7A1803E3AE00BDE216 /* IAAGenerator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IAAGenerator-Prefix.pch"; sourceTree = "<group>"; };
+		4A141C7B1803E3AE00BDE216 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4A141C7C1803E3AE00BDE216 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4A141C7F1803E3AE00BDE216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A141C811803E3AE00BDE216 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4A141C821803E3AE00BDE216 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4A141C841803E3AE00BDE216 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4A141CA11803E91200BDE216 /* IAAGenerator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = IAAGenerator.entitlements; sourceTree = "<group>"; };
+		4A141CA21803E91200BDE216 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4A141CAB1804087300BDE216 /* IAAHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IAAHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A141CB11804087300BDE216 /* IAAHost-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IAAHost-Info.plist"; sourceTree = "<group>"; };
+		4A141CB31804087300BDE216 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4A141CB51804087300BDE216 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4A141CB71804087300BDE216 /* IAAHost-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IAAHost-Prefix.pch"; sourceTree = "<group>"; };
+		4A141CB81804087300BDE216 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4A141CB91804087300BDE216 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4A141CBC1804087300BDE216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A141CBE1804087300BDE216 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4A141CBF1804087300BDE216 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4A141CC11804087300BDE216 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4A141CE218040D8100BDE216 /* IAAHost.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = IAAHost.entitlements; sourceTree = "<group>"; };
+		4A141CE51804482D00BDE216 /* IAAudioGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAAudioGenerator.h; sourceTree = "<group>"; };
+		4A141CE61804482D00BDE216 /* IAAudioGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAAudioGenerator.m; sourceTree = "<group>"; };
+		4A72A88D18053AD0004DE44C /* MyAUGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAUGraph.h; sourceTree = "<group>"; };
+		4A72A88E18053AD0004DE44C /* MyAUGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAUGraph.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A141C661803E3AE00BDE216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A141CA31803E91200BDE216 /* AudioToolbox.framework in Frameworks */,
+				4A141C6F1803E3AE00BDE216 /* CoreGraphics.framework in Frameworks */,
+				4A141C711803E3AE00BDE216 /* UIKit.framework in Frameworks */,
+				4A141C6D1803E3AE00BDE216 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A141CA81804087300BDE216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A141CAD1804087300BDE216 /* CoreGraphics.framework in Frameworks */,
+				4A141CAE1804087300BDE216 /* UIKit.framework in Frameworks */,
+				4A141CAC1804087300BDE216 /* Foundation.framework in Frameworks */,
+				4A141CE118040D0600BDE216 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A141C601803E3AE00BDE216 = {
+			isa = PBXGroup;
+			children = (
+				4A141CE41804482D00BDE216 /* IAAudio */,
+				4A141C721803E3AE00BDE216 /* IAAGenerator */,
+				4A141CAF1804087300BDE216 /* IAAHost */,
+				4A141C6B1803E3AE00BDE216 /* Frameworks */,
+				4A141C6A1803E3AE00BDE216 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A141C6A1803E3AE00BDE216 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A141C691803E3AE00BDE216 /* IAAGenerator.app */,
+				4A141CAB1804087300BDE216 /* IAAHost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A141C6B1803E3AE00BDE216 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A141CA21803E91200BDE216 /* AudioToolbox.framework */,
+				4A141C6C1803E3AE00BDE216 /* Foundation.framework */,
+				4A141C6E1803E3AE00BDE216 /* CoreGraphics.framework */,
+				4A141C701803E3AE00BDE216 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A141C721803E3AE00BDE216 /* IAAGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				4A141CA11803E91200BDE216 /* IAAGenerator.entitlements */,
+				4A141C7B1803E3AE00BDE216 /* AppDelegate.h */,
+				4A141C7C1803E3AE00BDE216 /* AppDelegate.m */,
+				4A141C7E1803E3AE00BDE216 /* Main.storyboard */,
+				4A141C811803E3AE00BDE216 /* ViewController.h */,
+				4A141C821803E3AE00BDE216 /* ViewController.m */,
+				4A141C841803E3AE00BDE216 /* Images.xcassets */,
+				4A141C731803E3AE00BDE216 /* Supporting Files */,
+			);
+			path = IAAGenerator;
+			sourceTree = "<group>";
+		};
+		4A141C731803E3AE00BDE216 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A141C741803E3AE00BDE216 /* IAAGenerator-Info.plist */,
+				4A141C751803E3AE00BDE216 /* InfoPlist.strings */,
+				4A141C781803E3AE00BDE216 /* main.m */,
+				4A141C7A1803E3AE00BDE216 /* IAAGenerator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A141CAF1804087300BDE216 /* IAAHost */ = {
+			isa = PBXGroup;
+			children = (
+				4A72A88D18053AD0004DE44C /* MyAUGraph.h */,
+				4A72A88E18053AD0004DE44C /* MyAUGraph.m */,
+				4A141CE218040D8100BDE216 /* IAAHost.entitlements */,
+				4A141CB81804087300BDE216 /* AppDelegate.h */,
+				4A141CB91804087300BDE216 /* AppDelegate.m */,
+				4A141CBB1804087300BDE216 /* Main.storyboard */,
+				4A141CBE1804087300BDE216 /* ViewController.h */,
+				4A141CBF1804087300BDE216 /* ViewController.m */,
+				4A141CC11804087300BDE216 /* Images.xcassets */,
+				4A141CB01804087300BDE216 /* Supporting Files */,
+			);
+			path = IAAHost;
+			sourceTree = "<group>";
+		};
+		4A141CB01804087300BDE216 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A141CB11804087300BDE216 /* IAAHost-Info.plist */,
+				4A141CB21804087300BDE216 /* InfoPlist.strings */,
+				4A141CB51804087300BDE216 /* main.m */,
+				4A141CB71804087300BDE216 /* IAAHost-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A141CE41804482D00BDE216 /* IAAudio */ = {
+			isa = PBXGroup;
+			children = (
+				4A141CE51804482D00BDE216 /* IAAudioGenerator.h */,
+				4A141CE61804482D00BDE216 /* IAAudioGenerator.m */,
+			);
+			path = IAAudio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A141C681803E3AE00BDE216 /* IAAGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A141C9B1803E3AE00BDE216 /* Build configuration list for PBXNativeTarget "IAAGenerator" */;
+			buildPhases = (
+				4A141C651803E3AE00BDE216 /* Sources */,
+				4A141C661803E3AE00BDE216 /* Frameworks */,
+				4A141C671803E3AE00BDE216 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IAAGenerator;
+			productName = InterAppDataEx;
+			productReference = 4A141C691803E3AE00BDE216 /* IAAGenerator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A141CAA1804087300BDE216 /* IAAHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A141CD51804087300BDE216 /* Build configuration list for PBXNativeTarget "IAAHost" */;
+			buildPhases = (
+				4A141CA71804087300BDE216 /* Sources */,
+				4A141CA81804087300BDE216 /* Frameworks */,
+				4A141CA91804087300BDE216 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IAAHost;
+			productName = IAAHost;
+			productReference = 4A141CAB1804087300BDE216 /* IAAHost.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A141C611803E3AE00BDE216 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Qoncept;
+				TargetAttributes = {
+					4A141C681803E3AE00BDE216 = {
+						DevelopmentTeam = 3B8C483UAP;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+						};
+					};
+					4A141CAA1804087300BDE216 = {
+						DevelopmentTeam = 3B8C483UAP;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 4A141C641803E3AE00BDE216 /* Build configuration list for PBXProject "IAAudioTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A141C601803E3AE00BDE216;
+			productRefGroup = 4A141C6A1803E3AE00BDE216 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A141C681803E3AE00BDE216 /* IAAGenerator */,
+				4A141CAA1804087300BDE216 /* IAAHost */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A141C671803E3AE00BDE216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A141C851803E3AE00BDE216 /* Images.xcassets in Resources */,
+				4A141C771803E3AE00BDE216 /* InfoPlist.strings in Resources */,
+				4A141C801803E3AE00BDE216 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A141CA91804087300BDE216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A141CC21804087300BDE216 /* Images.xcassets in Resources */,
+				4A141CB41804087300BDE216 /* InfoPlist.strings in Resources */,
+				4A141CBD1804087300BDE216 /* Main.storyboard in Resources */,
+				4A141CE318040D8100BDE216 /* IAAHost.entitlements in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A141C651803E3AE00BDE216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A141C831803E3AE00BDE216 /* ViewController.m in Sources */,
+				4A141CE81804482D00BDE216 /* IAAudioGenerator.m in Sources */,
+				4A141C7D1803E3AE00BDE216 /* AppDelegate.m in Sources */,
+				4A141C791803E3AE00BDE216 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A141CA71804087300BDE216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A141CC01804087300BDE216 /* ViewController.m in Sources */,
+				4A141CE91804482D00BDE216 /* IAAudioGenerator.m in Sources */,
+				4A141CBA1804087300BDE216 /* AppDelegate.m in Sources */,
+				4A72A88F18053AD0004DE44C /* MyAUGraph.m in Sources */,
+				4A141CB61804087300BDE216 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4A141C751803E3AE00BDE216 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A141C761803E3AE00BDE216 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4A141C7E1803E3AE00BDE216 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A141C7F1803E3AE00BDE216 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A141CB21804087300BDE216 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A141CB31804087300BDE216 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4A141CBB1804087300BDE216 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A141CBC1804087300BDE216 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A141C991803E3AE00BDE216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4A141C9A1803E3AE00BDE216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A141C9C1803E3AE00BDE216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = IAAGenerator/IAAGenerator.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IAAGenerator/IAAGenerator-Prefix.pch";
+				INFOPLIST_FILE = "IAAGenerator/IAAGenerator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4A141C9D1803E3AE00BDE216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = IAAGenerator/IAAGenerator.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IAAGenerator/IAAGenerator-Prefix.pch";
+				INFOPLIST_FILE = "IAAGenerator/IAAGenerator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4A141CD61804087300BDE216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = IAAHost/IAAHost.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IAAHost/IAAHost-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IAAHost/IAAHost-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4A141CD71804087300BDE216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = IAAHost/IAAHost.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IAAHost/IAAHost-Prefix.pch";
+				INFOPLIST_FILE = "IAAHost/IAAHost-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A141C641803E3AE00BDE216 /* Build configuration list for PBXProject "IAAudioTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A141C991803E3AE00BDE216 /* Debug */,
+				4A141C9A1803E3AE00BDE216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A141C9B1803E3AE00BDE216 /* Build configuration list for PBXNativeTarget "IAAGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A141C9C1803E3AE00BDE216 /* Debug */,
+				4A141C9D1803E3AE00BDE216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A141CD51804087300BDE216 /* Build configuration list for PBXNativeTarget "IAAHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A141CD61804087300BDE216 /* Debug */,
+				4A141CD71804087300BDE216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A141C611803E3AE00BDE216 /* Project object */;
+}
